@@ -44,33 +44,59 @@ A multifunctional PyQt5-based desktop application to streamline and automate PDF
 erc_app/
 │
 ├── main.py
-├── theme_config.json
+├── theme_config.json (can be deleted since the system can make on its own after closing the app for the first time)
 ├── budget.xlsx
 ├── icon.png
 ├── sun.png
 ├── moon.png
 ├── README.md
 ├── obr_extractor.py
+├── 2fa.png
+├── njz.png
+├── rename.png
+├── theme_manager.py
+├── users.json (can be deleted since the system can make on its own after signing up the first account)
 │
 ├── core/
-│   ├── file_utils.py
-│   ├── pdf_utils.py
 │   ├── budget_utils.py
-│   └── sharepoint_utils.py
+│   ├── email_utils.py
+│   ├── excel_utils.py
+│   ├── file_utils.py
+|   ├── logger.py
+|   ├── pdf_tools.py
+|   ├── pdf_utils.py
+|   ├── sharepoint_tools.py
+|   ├── sharepoint_utils.py
+|   ├── user_auth.py
 │
 ├── config/
-│   ├── constants.py
-│   └── theme_config.py
+│   ├── _init_.py
+│   └── constants.py
+|   ├── theme_config.json
+|   ├── theme_config.py
 │
 ├── ui_pages/
-    ├── main_window.py
-    ├── main_menu.py
-    ├── rename_page.py
-    ├── obr_page.py
-    ├── split_page.py
-    ├── sharepoint_page.py
-    └── earmark_page.py
-
+|   ├── activity_log_page.py
+|   ├── earmark_page.py
+|   ├── login_page.py
+|   ├── main_menu.py
+|   ├── main_window.py
+|   ├── merge_page.py
+|   ├── obr_fallback_dialog.py
+|   ├── obr_page.py
+|   ├── rename_option_dialog.py
+|   ├── rename_page.py
+|   ├── saro_fallback_dialog.py
+|   ├── sharepoint_page.py
+|   ├── signup_dialog.py
+|   ├── split_page.py
+|   ├── two_factor_dialog.py
+|
+|
+├── utils/
+    ├── dialogs.py
+    ├── helpers.py
+    ├── image_utils.py
 ```x`
 
 ---
